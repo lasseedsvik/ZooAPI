@@ -20,7 +20,12 @@ namespace ZooAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult<Animal> Get(int id)
         {
-            return _rep.GetAnimal(id);
+            var animal = _rep.GetAnimal(id);
+
+            if (animal == null)
+                return NotFound();
+
+            return animal;
         }
     }
 }
