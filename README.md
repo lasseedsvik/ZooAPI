@@ -5,4 +5,7 @@ List all:
 /zoo/api
 
 Details:
-/zoo/api/3 
+/zoo/api/3
+
+Swagger: 
+/swagger
